@@ -23,6 +23,17 @@ pygame.mixer.init()
 
 import sys, random
 
+#TODO something
+#FIXME my life
+#BUG nasty creatures
+#NOTE don't forget it
+#HACK the dark web
+#XXX oh boyyyy
+#REF to that place
+#REVIEW have a look at this pls
+#IDEA how 'bout that bud?
+#DEL fuckin die trash
+
 # window settings
 WINDOW_TITLE = 'Snake - Python'		# set the window title
 MULTIPLIER = 1.5	# this multiplier can be used to scale the game up / down
