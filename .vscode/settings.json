@@ -1,4 +1,5 @@
 {
 	"zenMode.hideLineNumbers": false,
-	"search.showLineNumbers": true
+	"search.showLineNumbers": true,
+	"python.pythonPath": "C:\\Users\\arvid\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
 }
