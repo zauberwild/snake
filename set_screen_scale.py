@@ -1,6 +1,17 @@
+"""
+this sketch allow to simply set the scale of pygame-screen
+
+TODO clean up and document code
+"""
+
 import tkinter as tk
 
-def setScale(w, h, s=1.5):
+def setScale(w, h, s=1):
+	"""open a window and ask for scale
+	- w: standard width
+	- h: standard height
+	- s: pre-chosen scale
+	"""
 	st_width = w
 	st_height = h
 	st_scale = s
@@ -45,6 +56,6 @@ def setScale(w, h, s=1.5):
 	return float(li[0])
 
 """
-e = setScale(700,400,1.5)
+e = setScale(700,400,1.5)			#DEL own function call
 print(e)
 """
