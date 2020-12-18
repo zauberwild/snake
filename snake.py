@@ -9,11 +9,15 @@ SOURCES / CREDITS:
 
 	SFX: completely self produced with  Bosca Ceoil. (Creative Commons Attribution - No Derivative Works
 			3.0 Unported, https://creativecommons.org/licenses/by-nd/3.0/)
+
+TODO implement set_screen_scale
 """
 
 # imports
 import time
 import scores
+import random
+import set_screen_scale
 # all this pygame stuff
 import pygame
 import pygame.freetype
@@ -21,18 +25,6 @@ pygame.mixer.pre_init(44100, -16, 1, 512)
 pygame.init()
 pygame.mixer.init()
 
-import sys, random
-
-#TODO something
-#FIXME my life
-#BUG nasty creatures
-#NOTE don't forget it
-#HACK the dark web
-#XXX oh boyyyy
-#REF to that place
-#REVIEW have a look at this pls
-#IDEA how 'bout that bud?
-#DEL fuckin die trash
 
 # window settings
 WINDOW_TITLE = 'Snake - Python'		# set the window title
