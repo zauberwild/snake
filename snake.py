@@ -34,8 +34,8 @@ MULTIPLIER = 1.5	# this multiplier can be used to scale the game up / down
 
 FPS = 60		# the frames per second
 
-inital_blocks_per_second = 7		# the starting velocity
-blocks_per_second = inital_blocks_per_second	# the velocity of the snake
+initial_blocks_per_second = 7		# the starting velocity
+blocks_per_second = initial_blocks_per_second	# the velocity of the snake
 						# will be increased by the acceleration value
 acceleration = 1		# the acceleration value
 update_time = 1 / blocks_per_second		# the time that passes between every snake update
@@ -76,8 +76,8 @@ points = 0
 menu_active = True		# used to switch between game and screen
 
 # menu variables
-menu_points = ["PLAY", "wall boundaries: False", "increase speed: False", "QUIT"]	# stores the diferent menu points
-menu_i = 0		# stores wich point is choosed
+menu_points = ["PLAY", "wall boundaries: False", "increase speed: False", "QUIT"]	# stores the different menu points
+menu_i = 0		# stores wich point is chosen
 menu_action = False		# stores whether the enter key in menu was pressed and the corresponding action needs to be done
 menu_font = pygame.freetype.Font("lib/fonts/CamingoCode-Regular.ttf", 30)
 
@@ -96,7 +96,7 @@ class Snake():
 	"""
 
 	def __init__(self, color):
-		# syncing everything up and creating neccesary variables
+		# syncing everything up and creating necessary variables
 		self.color = color
 		
 		self.pos_x = []	# add the first block (this one and all following will be in COL_SNAKE)
@@ -196,7 +196,7 @@ class Food():
 	"""
 	
 	def __init__(self, color):
-    	# syncing everything up and creating neccesary variables
+    	# syncing everything up and creating necessary variables
 		self.color = color
 
 		self.pos_x = 0
@@ -294,7 +294,7 @@ while game_active:
 				snake.reset()					# reset snake
 				screen.fill(COL_BACKGROUND)		# clear the background
 				snack.generate()				# generate new snake
-				blocks_per_second = inital_blocks_per_second		# set velocity
+				blocks_per_second = initial_blocks_per_second		# set velocity
 				update_time = 1 / blocks_per_second
 				points = 0						# set points to zero
 			elif(menu_i == 1):			# setting: wall boundary
