@@ -1,5 +1,12 @@
 {
 	"zenMode.hideLineNumbers": false,
 	"search.showLineNumbers": true,
-	"python.pythonPath": "C:\\Users\\arvid\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
+	"python.pythonPath": "C:\\Users\\arvid\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+	"cSpell.ignoreWords": [
+		"bosca",
+		"camingo",
+		"ceoil",
+		"code",
+		"unported"
+	]
 }
