@@ -3,8 +3,9 @@ This script handles saving the highscores.
 You will be able to type in your name, 
 and it will be saved with your score
 """
-
-pathToFile = "lib/scores"
+from pathlib import Path
+gen_path = str(Path(__file__).parent.absolute())
+pathToFile = gen_path + "/lib/scores"
 
 names = []		# this list will hold all the names
 scores	= []	# this list will hold all the scores

@@ -18,6 +18,7 @@ import time
 import scores
 import random
 import set_screen_scale
+from pathlib import Path
 # all this pygame stuff
 import pygame
 import pygame.freetype
@@ -46,7 +47,7 @@ set_wall_boundaries = False		# True: Snake dies at collision with wall
 								# False: Snake will appear on the other side
 set_increase_velocity = False	# True: Snake will accelerate after every bite
 								# False: Snake won't accelerate
-
+gen_path = str(Path(__file__).parent.absolute())
 # game constants
 # directions
 UP = 0
@@ -62,8 +63,8 @@ COL_MENU_NORMAL = (255,255,255)		# color of the not highlighted text in menu
 COL_MENU_HIGHLIGHTED = COL_SNAKE	# color of the selected / highlighted text in menu
 
 # sound
-SFX_EAT = pygame.mixer.Sound('lib/sfx/eat.wav')																																					# eat it - just eat it
-SFX_DIE = pygame.mixer.Sound('lib/sfx/die.wav')
+SFX_EAT = pygame.mixer.Sound(gen_path + '/lib/sfx/eat.wav')																																					# eat it - just eat it
+SFX_DIE = pygame.mixer.Sound(gen_path + '/lib/sfx/die.wav')
 
 # coordinate system / blocks
 BLOCKS_X = 35		# amount of blocks in width
@@ -79,7 +80,7 @@ menu_active = True		# used to switch between game and screen
 menu_points = ["PLAY", "wall boundaries: False", "increase speed: False", "QUIT"]	# stores the different menu points
 menu_i = 0		# stores wich point is chosen
 menu_action = False		# stores whether the enter key in menu was pressed and the corresponding action needs to be done
-menu_font = pygame.freetype.Font("lib/fonts/CamingoCode-Regular.ttf", 30)
+menu_font = pygame.freetype.Font(gen_path + "/lib/fonts/CamingoCode-Regular.ttf", 30)
 
 # window
 SCREEN_WIDTH = int(BLOCK_WIDTH * BLOCKS_X)
