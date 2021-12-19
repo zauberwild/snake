@@ -86,7 +86,7 @@ def __saveScores__():
 if False: # example code here
 	loadScores()
 
-	na = "Schiemann"
+	na = "Astley"
 	sc = getScoreByName(na)
 	print("score of " + na + ": " + str(sc))
 
@@ -99,7 +99,7 @@ if False: # example code here
 	for idx, val in enumerate(names):
 		print(val + ":" + str(scores[idx]))
 
-	n_na = "Niko"
+	n_na = "Rick"
 	n_sc = 49
 	addScore(n_na, n_sc)
 
